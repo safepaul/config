@@ -22,13 +22,14 @@
           [
             "${self}/conf/misc/kitty_double_input_fix.nix"
 
-            "${self}/conf/core/options.nix"
+            "${self}/conf/core/misc.nix"
             "${self}/conf/core/keymaps.nix"
             "${self}/conf/core/theme.nix"
 
             "${self}/conf/plugins/bufferline.nix"
             "${self}/conf/plugins/neo-tree.nix"
             "${self}/conf/plugins/mini/mini_statusline.nix"
+            "${self}/conf/plugins/render-markdown-nvim.nix"
           ];
         }
       ).neovim;
