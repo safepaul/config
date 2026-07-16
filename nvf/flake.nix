@@ -30,6 +30,7 @@
             "${self}/conf/plugins/neo-tree.nix"
             "${self}/conf/plugins/mini/mini_statusline.nix"
             "${self}/conf/plugins/render-markdown-nvim.nix"
+            "${self}/conf/plugins/csvview.nix"
           ];
         }
       ).neovim;
