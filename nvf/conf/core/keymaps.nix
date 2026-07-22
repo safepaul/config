@@ -4,6 +4,7 @@
   [
     # The next two keymaps are for sharing system and vim's clipboard 
     # when yanking/pasting  
+    # TODO: see todo.md
     {
       desc = "Copy to system clipboard";
       mode = [ "n" "v" "x" ];
@@ -17,6 +18,19 @@
       action = "\"+p";
     }   
     
+    
+    {
+      desc = "Hold selection after tabbing with '>'";
+      mode = [ "v" "x" ];
+      key = ">";
+      action = ">gv";
+    }   
+    {
+      desc = "Hold selection after untabbing with '<'";
+      mode = [ "v" "x" ];
+      key = "<";
+      action = "<gv";
+    }   
 
     # {
     #   desc = "";
