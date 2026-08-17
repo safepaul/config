@@ -5,18 +5,19 @@
     # The next two keymaps are for sharing system and vim's clipboard 
     # when yanking/pasting  
     # TODO: see todo.md
-    {
-      desc = "Copy to system clipboard";
-      mode = [ "n" "v" "x" ];
-      key = "y";
-      action = "\"+y";
-    }   
-    {
-      desc = "Paste from system clipboard";
-      mode = [ "n" "v" "x" ];
-      key = "p";
-      action = "\"+p";
-    }   
+    # XXX: Commented because it doesnt work well
+    # {
+    #   desc = "Copy to system clipboard";
+    #   mode = [ "n" "v" "x" ];
+    #   key = "y";
+    #   action = "\"+y";
+    # }   
+    # {
+    #   desc = "Paste from system clipboard";
+    #   mode = [ "n" "v" "x" ];
+    #   key = "p";
+    #   action = "\"+p";
+    # }   
     
     
     {
