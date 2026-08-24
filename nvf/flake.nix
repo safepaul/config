@@ -32,6 +32,9 @@
             "${self}/conf/plugins/render-markdown-nvim.nix"
             "${self}/conf/plugins/csvview.nix"
             "${self}/conf/plugins/telescope.nix"
+            "${self}/conf/plugins/lsp.nix"
+            "${self}/conf/plugins/treesitter.nix"
+            "${self}/conf/plugins/whichKey.nix"
           ];
         }
       ).neovim;
