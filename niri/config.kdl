@@ -55,8 +55,13 @@ overview {
   }
 }
 
-
-
+// For spawning small floating terminals
+window-rule {
+    match app-id="^ghostty-float$"
+    open-floating true
+    default-column-width { proportion 0.6; }
+    default-window-height { fixed 450; }
+}
 
 window-rule {
   // Rounded corners for a modern look.
@@ -99,6 +104,9 @@ binds {
 
   // Spawn terminal
   Mod+Return hotkey-overlay-title="Open a Terminal: ghostty" { spawn "ghostty"; }
+  
+  // Spawn Firefox
+  Mod+B hotkey-overlay-title="Open a Browser: firefox" { spawn "firefox"; }
 
   // Lock screen
   Super+Alt+L hotkey-overlay-title="Lock the Screen: swaylock" { spawn "swaylock"; }
@@ -137,10 +145,10 @@ binds {
 
   // Alternative commands that move across workspaces when reaching
   // the first or last window in a column.
-  // Mod+J     { focus-window-or-workspace-down; }
-  // Mod+K     { focus-window-or-workspace-up; }
-  // Mod+Ctrl+J     { move-window-down-or-to-workspace-down; }
-  // Mod+Ctrl+K     { move-window-up-or-to-workspace-up; }
+  Mod+Alt+J     { focus-window-or-workspace-down; }
+  Mod+Alt+K     { focus-window-or-workspace-up; }
+  Mod+Alt+Shift+J     { move-window-down-or-to-workspace-down; }
+  Mod+Alt+Shift+K     { move-window-up-or-to-workspace-up; }
 
   Mod+Home { focus-column-first; }
   Mod+End  { focus-column-last; }

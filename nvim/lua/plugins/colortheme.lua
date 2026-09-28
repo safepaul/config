@@ -1,16 +1,17 @@
 return {
 	{
-		"scottmckendry/cyberdream.nvim",
-		lazy = false,
-		priority = 1000,
+	  "folke/tokyonight.nvim",
+	  lazy = false,
+	  priority = 1000,
+	  opts = {},
 
-		config = function()
-			vim.cmd.colorscheme('cyberdream-muted')
-			require'lualine'.setup {
-				  options = {
-				    theme = 'cyberdream'
-				  }
-				}
-		end
+	config = function()
+		vim.cmd.colorscheme('tokyonight-night')
+		require'lualine'.setup {
+			  options = {
+				theme = 'tokyonight'
+			  }
+			}
+	end
 	}
 }
